@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vn.microsoft.icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'">
+    <link rel="stylesheet" href="./css/th4.css">
+    
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Đơn Hàng</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <a href="index.html" class="header__logo">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <div class="header__three-img">
+
+                <a href="#" class="header__img img1">
+                    <img src="./images/header-img1.png" alt="">
+                </a>
+                <a href="#" class="header__img img2">
+                    <img src="./images/header-img2.png" alt="">
+                </a>
+                <a href="#" class="header__img img3">
+                    <img src="./images/header-img3.png" alt="">
+                </a>
+            </div>
+            <div class="header__mid">
+                <nav class="header__nav">
+                    <ul class="header__nav__items">
+                        <li> <a class="nav__item" href="trangchu.html">Trang chủ</a></li>
+                        <li> <a class="nav__item" href="gioithieu.html">Giới Thiệu</a></li>
+                        <li> <a class="nav__item" href="sanpham.html">Sản Phẩm</a></li>
+                        <li> <a class="nav__item" href="tintuc.html">Tin Tức</a></li>
+                        <li> <a class="nav__item" href="dangnhap.html">Đăng Nhập</a></li>
+                        <li><a class="nav__item" href="dangky.html">Đăng Ký</a></li>
+                        <li> <a class="nav__item" href="lienhe.html">Liên Hệ</a></li>
+                    </ul>
+                </nav>
+                <form action="timkiem.html" class="header__search form-search" action="">
+                    <input type="text" class="search-input" placeholder="Nhập nội dung cần tìm...">
+                    <div class="button__group">
+                        <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <a class="btn cart-shopping">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <article>
+            <div class="nameheader">
+                <h1 class="product__title product__header-center cart__title cart__title-under">Chi Tiết Đơn Hàng</h1>
+
+            </div>
+            <table class="order" id="cartDetail">
+                <thead>
+                    <th class="th">Hình SP</th>
+                    <th class="th">Tên SP</th>
+                    <th class="th">Số lượng</th>
+                    <th class="th">Giá</th>
+                    <th class="th">Thành tiền</th>
+                    <th class="th">Xóa</th>
+                </thead>
+                <tbody id="tbody" class="tbody">
+
+                </tbody>
+                <tfoot>
+                    <div class="buy">
+                        <tr>
+                            <td colspan="6" class="table-text-right td ">Tổng thành tiền (A) = <span class="money-total">0 </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="table-text-right td"> Chiết khấu (B) = 0.1 x A = <span
+                                    class="money-dis">0</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="table-text-right td"> Thuế (C) = 10% x (A-B) = <span class="money-tax">0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="table-text-right td"> Tổng đơn hàng = A - B + C = <span
+                                    class="money-order">0</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="text-align: center;"><input type="submit" value="Xác nhận đơn hàng"></td>
+                        </tr>
+                    </div>
+                </tfoot>
+            </table>
+        </article>
+    </main>
+    <footer class="footer">
+        <p class="footer__content">
+            &copy; 2021 Bản quyền thuộc về FreeezeVN.
+            <a href="facebook.com" class="brand-color"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="twitter.com" class="brand-color"><i class="fa-brands fa-twitter"></i></a>
+            <a href="pinterest.com" class="brand-color"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#" class="scoll">
+                <img src="./images/top.png" alt="">
+             </a>
+        </p>
+    </footer>
+    <script src="th4.js"></script>
+</body>
+
+</html>
